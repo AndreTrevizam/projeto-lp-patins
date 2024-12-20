@@ -115,8 +115,8 @@ section.hero {
     }
 
     & img[src*='Stars1'] {
-      max-width: 5.5rem;
-      top: 30%;
+      max-width: 3.5rem;
+      top: 25%;
       z-index: 0;
 
       opacity: 0;
@@ -125,9 +125,9 @@ section.hero {
     }
 
     & img[src*='Stars2'] {
-      max-width: 2.5rem;
+      max-width: 1.8rem;
       right: 0;
-      bottom: 35%;
+      bottom: 40%;
 
       transform: translateX(400%);
       animation: slideIn 2s 800ms ease both;
@@ -231,6 +231,25 @@ section.hero {
 
     &>div:nth-child(2) {
       height: 30.5rem;
+
+      & img[src*='Stars1'] {
+        max-width: 5.5rem;
+        top: 30%;
+        z-index: 0;
+  
+        opacity: 0;
+        transform: translateX(400%);
+        animation: slideIn 2s 800ms ease both, appear 1s 800ms ease both;
+      }
+  
+      & img[src*='Stars2'] {
+        max-width: 2.5rem;
+        right: 0;
+        bottom: 35%;
+  
+        transform: translateX(400%);
+        animation: slideIn 2s 800ms ease both;
+      }
     }
 
     & h1 div {
